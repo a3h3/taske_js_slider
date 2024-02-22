@@ -1,0 +1,65 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    overflow-x: hidden;
+}
+
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .text
+{
+    width: 100%;
+    height: 100%;
+    background: #00000053;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container .text p,
+.container .text span
+{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+}
+.container .text span:not(#num)
+{
+    position: absolute;
+}
+.container .text .left
+{
+    right: 20px;
+    cursor: pointer;
+}
+.container .text .right
+{
+    left: 20px;
+    cursor: pointer;
+}
+.imges_Basic img
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.active
+{
+    z-index: 2;
+}
