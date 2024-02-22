@@ -1,0 +1,1 @@
+# taske_js_slider
