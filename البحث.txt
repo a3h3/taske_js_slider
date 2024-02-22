@@ -1,0 +1,47 @@
+نظام BEM (Block Element Modifier) هو أسلوب لتنظيم وتسمية وتطوير مشاريع الويب في تصميمها وبرمجتها. يتم استخدام BEM لتحسين قابلية صيانة وتطوير الشفرة، وتعزيز فهمها وإدارتها، خاصة في مشاريع الويب الكبيرة والمعقدة.
+
+تعتمد فكرة BEM على تقسيم واجهة المستخدم إلى مكونات (أو كتل) رئيسية تُسمى "blocks"، وهي العناصر الرئيسية في الموقع أو التطبيق. وتتكون هذه الكتل من "elements"، وهي الأجزاء الفرعية التي تتكون منها الكتل، و "modifiers"، التي تغير مظهر أو سلوك الكتل أو العناصر.
+
+الفائدة الرئيسية لـ BEM هي توفير هيكل موحد وواضح للشفرة والتصميم، مما يجعلها أسهل للفهم والصيانة وإعادة استخدام الأجزاء.
+
+طيب، لنقدم مثالًا بسيطًا على كيفية تطبيق نظام BEM في تنظيم شفرة CSS لعنصر واجهة مستخدم بسيط، مثل زر.
+
+لنفترض أن لدينا زر يظهر على الصفحة. سنقوم بتنظيم شفرة CSS باستخدام BEM كالتالي:
+
+HTML:
+<button class="button button--large button--primary">Click me</button>
+
+CSS:
+/* Block styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Modifier styles */
+.button--large {
+  font-size: 20px;
+  padding: 15px 30px;
+}
+
+.button--primary {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+.button--primary:hover {
+  background-color: #2980b9;
+}
+
+
+في هذا المثال:
+
+الكلاس .button هو الكتلة (البلوك).
+.button--large و .button--primary هما مثال على الموديفايرز (Modifiers) التي تغير مظهر الزر.
+يتم دمج الكتل والموديفايرز في عنوان الكلاس للعناصر HTML.
+هذا المثال يوضح كيف يمكن استخدام نظام BEM لتنظيم شفرة CSS بطريقة منظمة وسهلة الفهم والصيانة.
